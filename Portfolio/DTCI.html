@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Barkot Simegn Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="transparent_logo.png">
+    </head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class = "left">
+                <div class="logo">
+                    <a href="Protoweb.html"><img src="transparent_logo.png" width="50"></a>
+                </div>
+                    <h3>Barkot Simegn</h3>
+            </div>
+            <ul>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><button class="email-btn" onclick="openPopup()">
+                    <img src="[CITYPNG.COM]PNG Mail Email Address Round Outline White Icon - 1000x1000.png" width="45">
+                </button></li>
+                <li><a href="https://www.linkedin.com/in/barkot-simegn-80509329b/" target="_blank"><img src="In-White-128@2x.png" width="40"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Overlay (Clickable to Close) -->
+<div id="overlay" class="overlay" onclick="closePopup()"></div>
+
+<!-- Email Pop-Up -->
+<div id="popup" class="popup">
+    <div class="popup-header">
+        <span class="close" onclick="closePopup()">&times;</span>
+    </div>
+    <div class="popup-content">
+        <p>Email: <strong>barkotsimegn@gmail.com</strong></p>
+    </div>
+</div>
+<script>
+function openPopup() {
+    document.getElementById("popup").style.display = "block";
+    document.getElementById("overlay").style.display = "block";
+}
+
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
+    document.getElementById("overlay").style.display = "none";
+}
+
+// Close pop-up when clicking outside
+document.getElementById("overlay").addEventListener("click", closePopup);
+</script>
+
+    <main>  
+        <div class="tit"><h4>Design Thinking and Communication I</h4></div>
+        <div class="topinfo">
+            <div class="toppic">
+            <img src="Fiker Frames 2.0 (1).png" alt="">
+            </div>
+            <div class="middleinfo">
+                <div class="overview">
+                    <div class="title"><h2>Overview</h2></div>
+                    <p>labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="skills">
+                    <div class="title">
+                        <h2>Skills</h2>
+                    </div>
+                        <ul>
+                            <li>
+                                <div class="skillicons">
+                                <img src="transparent_logo.png">
+                                <p>CAD</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="skillicons">
+                                <img src="transparent_logo.png">
+                                <p>Simulation</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="skillicons">
+                                <img src="transparent_logo.png">
+                                <p>CAM</p>
+                                </div>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+            <div class="rightinfo">
+                <div class="roles">
+                    <div class="title">
+                        <h2>Roles</h2>
+                    </div>
+                    <ul>
+                        <li>Lead Designer</li>
+                        <li>Lead Prototyper</li>
+                        <li>Sole Publisher</li>
+                    </ul>
+                </div>
+                <div class="tools">
+                    <div class="title">
+                        <h2>Tools</h2>
+                    </div> 
+                    <ul>
+                        <li>Solidworks</li>
+                        <li>AutoCad</li>
+                        <li>Revit</li>
+                    </ul>                  
+                </div>
+            </div>
+        </div>
+        <div class="mainslideshow">
+            <div class="slider-container">
+                <ul id="slideshow">
+                    <li><img src="Fiker Frames 2.0 (1).png" alt=""></li>
+                    <li><img src="Screenshot 2025-02-03 235630.png" alt=""></li>
+                    <li><img src="Fiker Frames 2.0 (1).png" alt=""></li>
+                    <li><img src="Fiker Frames 2.0 (1).png" alt=""></li>
+                    <li><img src="Screenshot 2025-02-03 235630.png" alt=""></li>
+                    <li><img src="Fiker Frames 2.0 (1).png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+              
+        <div class="main body">
+            <div class="maintext">
+                <div class="title"><h2>Models Over the Years</h2></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="mainimg">
+                <img src="Fiker Frames 2.0 (1).png">
+            </div>
+        </div>
+        <div class="learning">
+            <div class="title"><h2>Learning</h2></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias cupiditate tempora aliquid, id aspernatur asperiores aut ipsum facilis earum tempore accusantium rerum repellat blanditiis quaerat, tenetur harum possimus nihil. Ut.</p>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+    const slideshow = document.getElementById('slideshow');
+    const slides = [...slideshow.children];
+    
+    // Duplicate slides for seamless wrapping
+    slides.forEach(slide => {
+        slideshow.appendChild(slide.cloneNode(true));
+    });
+});
+        </script>
+    </main>  
+</body>
+
+</html>
