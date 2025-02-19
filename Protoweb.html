@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Barkot Simegn Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="transparent_logo.png">
+    </head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class = "left">
+                <div class="logo">
+                    <a href="Protoweb.html"><img src="transparent_logo.png" width="50"></a>
+                </div>
+                    <h3>Barkot Simegn</h3>
+            </div>
+            <ul>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><button class="email-btn" onclick="openPopup()">
+                    <img src="[CITYPNG.COM]PNG Mail Email Address Round Outline White Icon - 1000x1000.png" width="45">
+                </button></li>
+                <li><a href="https://www.linkedin.com/in/barkot-simegn-80509329b/" target="_blank"><img src="In-White-128@2x.png" width="40"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Overlay (Clickable to Close) -->
+<div id="overlay" class="overlay" onclick="closePopup()"></div>
+
+<!-- Email Pop-Up -->
+<div id="popup" class="popup">
+    <div class="popup-header">
+        <span class="close" onclick="closePopup()">&times;</span>
+    </div>
+    <div class="popup-content">
+        <p>Email: <strong>barkotsimegn@gmail.com</strong></p>
+    </div>
+</div>
+<script>
+function openPopup() {
+    document.getElementById("popup").style.display = "block";
+    document.getElementById("overlay").style.display = "block";
+}
+
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
+    document.getElementById("overlay").style.display = "none";
+}
+
+// Close pop-up when clicking outside
+document.getElementById("overlay").addEventListener("click", closePopup);
+</script>
+    <main>  
+        <div class="hero">
+            <div class="hero slide active">
+                <img src="Screenshot 2025-02-10 004023.png">
+            </div>
+            <div class="hero slide">
+                <img src="Screenshot 2025-02-10 005647.png">
+            </div>
+            <div class="hero slide">
+                <img src="Screenshot 2025-02-10 010135.png">
+            </div>
+        </div>
+        <div class="intro text">
+            <h2>Design with purpose, Build to Solve, Create from Compassion</h2>
+        </div>
+        <script>
+            function slideShow() {
+                const slides = document.querySelectorAll('.hero .slide');
+                let currentSlide = 0;
+                
+                function nextSlide() {
+                    // Remove active class from current slide
+                    slides[currentSlide].classList.remove('active');
+                    
+                    // Move to next slide, or back to first if at end
+                    currentSlide = (currentSlide + 1) % slides.length;
+                    
+                    // Add active class to new current slide
+                    slides[currentSlide].classList.add('active');
+                }
+                setInterval(nextSlide, 4000);
+            }
+            
+            // Start the slideshow when the page loads
+            document.addEventListener('DOMContentLoaded', slideShow);
+            </script>
+    </main> 
+     
+</body>
+
+</html>
