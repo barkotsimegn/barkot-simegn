@@ -53,10 +53,43 @@ function closePopup() {
 document.getElementById("overlay").addEventListener("click", closePopup);
 </script>
     <main>  
-      <div class="resume">
-        <img src="Resume for Portfolio-1.png">
-      </div>
-    </main>  
+        <div class="hero">
+            <div class="hero slide active">
+                <img src="Screenshot 2025-02-10 004023.png">
+            </div>
+            <div class="hero slide">
+                <img src="Screenshot 2025-02-10 005647.png">
+            </div>
+            <div class="hero slide">
+                <img src="Screenshot 2025-02-10 010135.png">
+            </div>
+        </div>
+        <div class="intro text">
+            <h5>"Inspiration comes from many places, it is the job of the designer to engineer solutions from the noise."</h5>
+        </div>
+        <script>
+            function slideShow() {
+                const slides = document.querySelectorAll('.hero .slide');
+                let currentSlide = 0;
+                
+                function nextSlide() {
+                    // Remove active class from current slide
+                    slides[currentSlide].classList.remove('active');
+                    
+                    // Move to next slide, or back to first if at end
+                    currentSlide = (currentSlide + 1) % slides.length;
+                    
+                    // Add active class to new current slide
+                    slides[currentSlide].classList.add('active');
+                }
+                setInterval(nextSlide, 4000);
+            }
+            
+            // Start the slideshow when the page loads
+            document.addEventListener('DOMContentLoaded', slideShow);
+            </script>
+    </main> 
+     
 </body>
 
 </html>
