@@ -213,13 +213,15 @@
         height: 100%;
     }
     .minproj{
-        margin: 5vh 0;
+        padding: 0;
+        margin:  0;
         flex-direction: row;
         display: flex;
         justify-content: center;
         justify-self: center;
         text-align: center;
         width: 95%;
+        height: min-content;
         position: relative;
     }
     .minproj ul{
@@ -233,6 +235,7 @@
         padding: 0;
     }
     .minproj ul li{
+        padding: 0;
         width: 23%;
         display: flex;
         justify-content: center;
@@ -240,6 +243,7 @@
         position: relative;
     }
     .minproj li img{
+        padding: 0;
         position: relative;
         width: 100%;
         aspect-ratio: 1/1;
