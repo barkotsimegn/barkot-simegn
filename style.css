@@ -189,7 +189,7 @@
     .portimg{
         flex-direction: row;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         justify-self: center;
         text-align: center;
         width: 95%;
@@ -212,7 +212,6 @@
         height: 100%;
     }
     .minproj{
-        background-color: red;
         margin: 5vh 0;
         flex-direction: row;
         display: flex;
