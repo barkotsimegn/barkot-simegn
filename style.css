@@ -195,6 +195,7 @@
         width: 95%;
         margin: 5vh 0;
         position: relative;
+        margin-bottom: 6vh;
     }
     .portimg ul{
         display: flex;
@@ -233,15 +234,20 @@
     }
     .minproj ul li{
         width: 23%;
-        aspect-ratio: 1/1;
         display: flex;
         justify-content: center;
+        flex-direction: column;
         position: relative;
     }
-    .minproj li:hover{
+    .minproj li img{
+        position: relative;
+        width: 100%;
+        aspect-ratio: 1/1;
+    }
+    .minproj .ontop:hover{
         background-color: rgb(0, 0, 0,.5);
     }
-    .minproj li p{
+    .minproj .overlaid p{
         margin: 1%;
     }
 
